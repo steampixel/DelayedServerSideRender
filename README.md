@@ -1,3 +1,5 @@
+# DelayedServerSideRender example theme
+
 Have you ever tried to create a server side rendered block that updates its content in Gutenberg 
 every time you change attributes using the ServerSideRender component? This becomes very nasty if 
 you change text attributes. Because every new character input will cause Gutenberg to query the 
