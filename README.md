@@ -5,4 +5,6 @@ every time you change attributes using the ServerSideRender component? This beco
 you change text attributes. Because every new character input will cause Gutenberg to query the 
 server for a newly rendered version of the block. This behavior also teases the server.
 
+This theme example shows how to avoid this using the DelayedServerSideRender React component instead of ServerSideRender.
+
 For more details refer to [my blog](https://steampixel.de/en/how-to-prevent-flickering-in-gutenberg-when-editing/)
