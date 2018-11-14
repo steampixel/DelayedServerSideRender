@@ -26,7 +26,7 @@ add_action( 'init', function() {
       ),
       'editor_script' => 'my_block',
       'render_callback' => function($attributes, $content) {
-        return 'Server side rendered: '.print_r($attributes,true);
+        return '<div>Server side rendered: '.print_r($attributes,true).'</div>';
       }
     ]);
 

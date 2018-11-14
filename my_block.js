@@ -1,11 +1,11 @@
 var el = wp.element.createElement;
 var registerBlockType = wp.blocks.registerBlockType;
-var TextareaControl = wp.components.TextareaControl; 
+var TextareaControl = wp.components.TextareaControl;
 var Fragment = wp.element.Fragment;
 var BlockControls = wp.editor.BlockControls;
 var InspectorControls = wp.editor.InspectorControls;
 
-registerBlockType( 'my/test', {
+registerBlockType( 'my/block', {
     title: 'Test',
     icon: 'megaphone',
     category: 'widgets',
@@ -36,7 +36,7 @@ registerBlockType( 'my/test', {
                 )
             ),
             el(DelayedServerSideRender, {
-      				block: "my/test",
+      				block: "my/block",
       				attributes:  props.attributes,
               delay: 1000
       			})
